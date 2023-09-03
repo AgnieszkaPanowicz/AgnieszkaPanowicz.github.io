@@ -496,6 +496,7 @@ section button {
 @media screen and (max-width: 800px) {
   .about .me {
     margin-bottom: 30px;
+    max-width: 100%;
   }
 }
 
@@ -524,6 +525,14 @@ section button {
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: 30px;
   margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+  .container img {
+    width: 100%;
+  }
 }
 .container .photo-gallery {
   color: #fff;

@@ -126,12 +126,25 @@
         <img src="img/clouds2.png" class="top-clouds" alt="Contact">
     </div>
 
-    <div id="section3">        
-        <h2>KONTAKT</h2>
+    <div id="section3" class="kontakt">
+        <div>
+            <h2>KONTAKT</h2>
 
-        Agnieszka Panowicz
-        <br>
-        agnieszkapanowicz@gmail.com
+            Agnieszka Panowicz
+            <br>
+            agnieszkapanowicz@gmail.com
+        </div>    
+        <div class="form">
+
+            <form method="post" action="subscribeform.php">
+                <input type="email" placeholder="Podaj e-mail" id="email" name="email" required> <br>
+                <div id="error-email">Popraw adres e-mail</div>
+                <textarea name="message" placeholder="Wiadomość" id="message"></textarea> <br>
+                <div id="error-message">Pole tekstowe jest puste</div>
+                <button onClick="sendContact();">Wyślij</button>
+            </form>
+
+        </div>
     </div>
     
     <footer></footer>

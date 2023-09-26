@@ -585,14 +585,13 @@ section {
 
 input {
   width: 100%;
-  max-width: 350px;
   height: 40px;
   border: 1px solid transparent;
   background: #265e6f;
   color: #fff;
   padding: 7px;
   border-radius: 3px;
-  margin: 5px;
+  margin: 5px 0;
   outline: none;
   font-family: Oswald;
   transition: all 0.3s ease;
@@ -615,7 +614,6 @@ input:focus {
   opacity: 1;
   transform: translateX(0);
   width: 100%;
-  max-width: 350px;
   margin: 0 auto 5px;
   background: #e02e44;
   border-radius: 3px;
@@ -624,13 +622,12 @@ input:focus {
 
 textarea {
   width: 100%;
-  max-width: 350px;
   border: 1px solid transparent;
   background: #265e6f;
   color: #fff;
   padding: 7px;
   border-radius: 3px;
-  margin: 5px;
+  margin: 5px 0;
   outline: none;
   font-family: Oswald;
   font-size: 14px;
@@ -644,6 +641,8 @@ textarea:focus {
 form {
   margin: 10px 0;
   font-size: 14px;
+  width: 100%;
+  max-width: 350px;
 }
 form button {
   background: #58b1ac;

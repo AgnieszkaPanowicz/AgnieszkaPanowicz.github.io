@@ -643,6 +643,7 @@ form {
   font-size: 14px;
   width: 100%;
   max-width: 350px;
+  margin: auto;
 }
 form button {
   background: #58b1ac;
@@ -653,7 +654,7 @@ form button {
   width: 100%;
   max-width: 350px;
   border-radius: 3px;
-  margin: 5px;
+  margin: 5px 0;
   font-weight: bold;
   transition: all 0.3s ease;
 }

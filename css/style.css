@@ -17,6 +17,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.page {
+  padding: 20px;
+  padding: 30px 0;
+}
+
 header {
   background-color: #e9fafc;
   width: 100%;
@@ -55,6 +64,7 @@ header {
   font-size: 32px;
 }
 .logo img {
+  -o-object-fit: none;
   object-fit: none;
   position: absolute;
   top: -11px;
@@ -64,6 +74,7 @@ header {
 .menu {
   display: flex;
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   gap: 40px;
@@ -97,22 +108,22 @@ header {
   opacity: 1;
 }
 .menu a:nth-child(3):hover ~ .dot {
-  transform: translateX(212px);
+  transform: translateX(188px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .menu a:nth-child(4):hover ~ .dot {
-  transform: translateX(307px);
+  transform: translateX(262px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .menu a:nth-child(5):hover ~ .dot {
-  transform: translateX(401px);
+  transform: translateX(359px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .menu a:nth-child(6):hover ~ .dot {
-  transform: translateX(491px);
+  transform: translateX(453px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
@@ -154,6 +165,7 @@ header {
   display: none;
   list-style: none;
   gap: 40px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0;
   transition: all 0.3s ease;
@@ -233,6 +245,7 @@ header {
   color: #fff;
   font-size: 21px;
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
   float: right;
   cursor: pointer;
@@ -333,7 +346,8 @@ section {
   padding: 100px 0;
   position: relative;
 }
-section button {
+
+.butt {
   display: block;
   margin-left: auto;
   cursor: pointer;
@@ -342,12 +356,17 @@ section button {
   color: #fff;
   padding: 10px 20px;
   font-size: 14px;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.26);
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 800px) {
-  section button {
+  .butt {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.butt:hover {
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
 }
 
 .contents {
@@ -376,8 +395,6 @@ section button {
   }
 }
 .contents img {
-  -webkit-box-shadow: 1px 5px 12px -5px black;
-  -moz-box-shadow: 1px 5px 12px -5px black;
   box-shadow: 1px 5px 12px -5px black;
 }
 @media screen and (max-width: 990px) {
@@ -488,9 +505,8 @@ section button {
 }
 .about .me {
   border-radius: 50%;
+  height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-shadow: 1px 5px 12px -5px black;
-  -moz-box-shadow: 1px 5px 12px -5px black;
   box-shadow: 1px 5px 12px -5px black;
 }
 @media screen and (max-width: 800px) {
@@ -564,5 +580,254 @@ section button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: 40px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  max-width: 350px;
+  height: 40px;
+  border: 1px solid transparent;
+  background: #265e6f;
+  color: #fff;
+  padding: 7px;
+  border-radius: 3px;
+  margin: 5px;
+  outline: none;
+  font-family: Oswald;
+  transition: all 0.3s ease;
+}
+input:focus {
+  border: 1px solid #55d8ff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 196, 255, 0.31);
+}
+
+.error-email, .error-message, .error-pass1, .error-pass2 {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateX(-50px);
+  transition: all 0.3s ease;
+}
+
+.error {
+  height: auto;
+  opacity: 1;
+  transform: translateX(0);
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 5px;
+  background: #e02e44;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid transparent;
+  background: #265e6f;
+  color: #fff;
+  padding: 7px;
+  border-radius: 3px;
+  margin: 5px;
+  outline: none;
+  font-family: Oswald;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+textarea:focus {
+  border: 1px solid #55d8ff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 196, 255, 0.31);
+}
+
+form {
+  margin: 10px 0;
+  font-size: 14px;
+}
+form button {
+  background: #58b1ac;
+  border: 0;
+  color: #003e50;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #5deae2;
+}
+
+.js {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto 50px;
+  max-width: 990px;
+  width: 100%;
+  padding: 0 20px;
+  gap: 70px;
+  color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .js {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+.js form input, .js form textarea {
+  max-width: unset;
+}
+.js form button {
+  display: block;
+  margin: 15px auto;
+}
+.js .js-left {
+  text-align: right;
+}
+@media screen and (max-width: 800px) {
+  .js .js-left {
+    order: 2;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  .js .js-right {
+    order: 1;
+  }
+}
+.js .js-tekst {
+  font-family: Oswald;
+  font-size: 40px;
+  line-height: 48px;
+}
+.js .js-script {
+  border: 1px solid #ffffff40;
+  padding: 40px;
+}
+.js .success {
+  display: none;
+}
+.js .success.yes {
+  display: block;
+}
+.js nav {
+  background-color: #fff;
+  padding: 20px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear;
+}
+.js nav.active {
+  width: 350px;
+}
+.js nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+.js nav.active ul {
+  width: 100%;
+}
+.js nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6 linear, opacity 0.6s linear;
+}
+.js nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+.js nav ul a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.js .icon {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.js .icon:focus {
+  outline: 0;
+}
+.js .icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  position: absolute;
+  width: 20px;
+  top: 10px;
+  left: 5px;
+  transition: transform 0.6s linear;
+}
+.js .icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+.js nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+.js nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
+
+#pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 22px;
+  padding: 20px 10px;
+  max-height: 740px;
+  overflow: auto;
+  border: 1px solid #ffffff40;
+}
+
+.pokemon-card {
+  text-align: center;
+  border-radius: 10px;
+  background-color: beige;
+  box-shadow: 1px 1px 3px #000000db;
+}
+.pokemon-card h3 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.js-poke {
+  max-width: 990px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 50px;
+  padding: 0 20px 0 10px;
+}
+.js-poke h2 {
+  font-family: Oswald;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.wars {
+  display: block;
   margin: auto;
 }

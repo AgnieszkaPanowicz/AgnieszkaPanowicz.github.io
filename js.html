@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="Portfolio Agnieszki Panowicz">
+    <meta name="author" content="Agnieszka Panowicz">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <!--<link rel="icon" href="/favicon.ico">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/simple-lightbox.css?v2.14.1" />
+    <title>Portfoli - Agnieszka Panowicz</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu on-pages">
+          <a href="index.php">Główna</a>
+          <a href="strony.html">Strony www</a>            
+          <a href="strony2.html">CSS</a>
+          <a href="js.html">JS</a>
+          <a href="grafika.html">Grafika</a>
+          <a href="index.php#about">O mnie</a>
+          <a href="index.php#section3">Kontakt</a>
+        </nav>
+    
+        <div class="menu-mobile">
+            <div class="top-mobile">
+                <div>
+                    <span>Portfolio</span>
+                    Agnieszka Panowicz
+                </div>
+                <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+            </div>
+                    
+    
+            <ul>
+              <li><a href="index.php">Główna</a></li>
+              <li><a href="strony.html">Strony www</a></li>
+              <li><a href="strony2.html">CSS</a></li>
+              <li><a href="js.html">JS</a></li>
+              <li><a href="grafika.html">Grafika</a></li>
+              <li><a href="index.php#about">O mnie</a></li>
+              <li><a href="index.php#section3">kontakt</a></li>
+            </ul>
+        </div> 
+    </header>
+
+<div class="page">
+    <div class="js">
+
+        <div class="form-left">
+            <p class="js-tekst">
+                Formularz kontaktowy<br>
+                z walidacją
+            </p>
+            
+        </div>
+        <div class="form-right js-script">
+            <form method="post" id="contactFormJs">
+                <label for="name">E-mail:</label>
+                <input type="email" placeholder="Podaj e-mail" id="email" name="email"> <br>
+                <div class="error-email">Popraw adres e-mail</div>
+                <label for="name">Hasło:</label>
+                <input type="password" placeholder="Podaj hasło" id="password"><input type="password" placeholder="Podaj hasło jeszcze raz" id="passwordCheck">
+                <div class="error-pass1">Hasła nie są takie same</div>
+                <div class="error-pass2">Hasło jest za krótkie</div>
+                <label for="name">Wiadomość:</label>
+                <textarea name="message" placeholder="Wiadomość" id="message"></textarea>
+                <div class="error-message">Pole tekstowe jest puste</div>
+                <input type="checkbox" id="newsletter" class="checkbox"/> Newsletter - tak, poproszę.
+                
+                <button>Wyślij</button>
+
+                <div class="success">Brawo, wszystko się zgadza!</div>
+            </form>            
+        </div>
+
+    </div>
+
+    <div class="js">
+        <div class="js-left js-script">
+            <nav class="active" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+        
+                </ul>
+        
+                <button class="icon" id="toggle">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </button>
+            </nav>            
+        </div>
+
+        <div class="js-right">
+            <p class="js-tekst">
+                Animowana nawigacja
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="js-poke">
+        <h2>Pokemon API</h2>
+        <div class="pokemon-list" id="pokemon-list"></div>
+    </div>
+
+    <img src="https:///www.codewars.com/users/Agnieszka21/badges/large" alt="codewars" class="wars">
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/script-js.js"></script>
+
+</body>
+</html>

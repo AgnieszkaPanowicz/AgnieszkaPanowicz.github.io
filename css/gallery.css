@@ -24,17 +24,9 @@
   width: 100%;
   height: auto;
   display: block;
-  -webkit-transition: -webkit-transform 0.35s ease;
-  -moz-transition: -moz-transform 0.35s ease;
-  -o-transition: -o-transform 0.35s ease;
-  -ms-transition: -ms-transform 0.35s ease;
   transition: transform 0.35s ease;
 }
 
 .small-demo a:hover img {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }

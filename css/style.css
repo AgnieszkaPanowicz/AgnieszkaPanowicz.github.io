@@ -127,6 +127,11 @@ header {
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
+.menu a:nth-child(7):hover ~ .dot {
+  transform: translateX(533px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 .menu .dot {
   width: 6px;
   height: 6px;
@@ -334,6 +339,9 @@ ul {
 @media screen and (max-width: 700px) {
   .balon {
     width: 115%;
+    height: 235px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 500px) {
@@ -396,6 +404,7 @@ section {
 }
 .contents img {
   box-shadow: 1px 5px 12px -5px black;
+  height: auto;
 }
 @media screen and (max-width: 990px) {
   .contents img {
@@ -652,7 +661,6 @@ form button {
   padding: 10px 20px;
   font-size: 14px;
   width: 100%;
-  max-width: 350px;
   border-radius: 3px;
   margin: 5px 0;
   font-weight: bold;
@@ -660,6 +668,12 @@ form button {
 }
 form button:hover {
   background: #5deae2;
+}
+form .mess {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e02e44;
+  border-radius: 3px;
 }
 
 .js {

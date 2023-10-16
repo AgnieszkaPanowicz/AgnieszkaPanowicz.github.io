@@ -16,13 +16,13 @@
 
     <header>
         <nav class="menu on-pages">
-          <a href="index.html">Główna</a>
+          <a href="index.php">Główna</a>
           <a href="strony.html">Strony www</a>            
           <a href="strony2.html">CSS</a>
           <a href="js.html">JS</a>
           <a href="grafika.html">Grafika</a>
-          <a href="index.html#about">O mnie</a>
-          <a href="index.html#section3">Kontakt</a>
+          <a href="index.php#about">O mnie</a>
+          <a href="index.php#section3">Kontakt</a>
           <a href="cv.html" target="_blank">CV</a>
         </nav>
     
@@ -37,28 +37,28 @@
                     
     
             <ul>
-              <li><a href="index.html">Główna</a></li>
+              <li><a href="index.php">Główna</a></li>
               <li><a href="strony.html">Strony www</a></li>
               <li><a href="strony2.html">CSS</a></li>
-              <li><a href="js.html">JS</a></li>
+              <li><a href="js.html">JAVASCRIPT</a></li>
               <li><a href="grafika.html">Grafika</a></li>
-              <li><a href="index.html#about">O mnie</a></li>
-              <li><a href="index.html#section3">kontakt</a></li>
+              <li><a href="index.php#about">O mnie</a></li>
+              <li><a href="index.php#section3">kontakt</a></li>
               <li><a href="cv.html" target="_blank">CV</a></li>
             </ul>
         </div> 
     </header>
 
-<div class="page">
+<div class="page page-js">
     <div class="js">
 
         <div class="form-left">
-            <p class="js-tekst">
+            <h2>
                 Formularz kontaktowy<br>
                 z walidacją
-            </p>
-            
+            </h2>            
         </div>
+
         <div class="form-right js-script">
             <form method="post" id="contactFormJs">
                 <label for="name">E-mail:</label>
@@ -80,6 +80,311 @@
         </div>
 
     </div>
+    
+    <h2>Kalendarz Adwentowy</h2>
+    <p>Sprawdza jedynie dni aktualnego miesiąca, żeby można było zobaczyć jego działanie. (Nie trzeba czekać na grudzień)</p>
+        
+    <div class="js-cal">
+        <div id="boxes"></div>
+        <div id="gifts">
+            <div class="gift1 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 1</h3>  
+                    <p>
+                        Mamo, choinka się pali! - wola Jasio z pokoju do matki zajętej w kuchni.<br>
+                        - Choinka się świeci, a nie pali - poprawia matka.<br>
+                        Za chwile chłopiec krzyczy:<br>
+                        - Mamo, mamo, firanki się świecą!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift2 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 2</h3>  
+                    <p>
+                        Jasio mówi do mamy: - Mamusiu, chciałbym ci coś ofiarować pod choinkę. <br>
+                        - Nie trzeba, syneczku. Jeśli chcesz mi sprawić przyjemność, to popraw swoją jedynkę z matematyki. <br>
+                        - Za późno, mamusiu. Kupiłem ci już perfumy.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift3 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 3</h3>  
+                    <p>
+                        Dwóch chłopców spędza noc przed wigilią u dziadków. Przed pójściem spać, klękają przed łóżkami i modlą się, a jeden z nich ile sił w płucach woła głośno: <br>
+                        - Modlę się o nowy rowerek, modlę się o nowe żołnierzyki, modlę się o nowy odtwarzacz dvd... <br>
+                        Starszy brat pochylił się i szturchnął go mówiąc: <br>
+                        - Dlaczego tak krzyczysz? Bóg nie jest głuchy. <br>
+                        Na to chłopiec: <br>
+                        - Nie, ale babcia jest.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift4 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 4</h3>  
+                    <p>
+                        Przyjaciel pyta Nowaka:<br>
+                        - Jak minęły święta?<br>
+                        - Wspaniale! Żona serwowała mi same zagraniczne potrawy.<br>
+                        - Jakie?<br>
+                        - Barszcz ukraiński, fasolkę po bretońsku, pierogi ruskie i sznycel po wiedeńsku z kapustą włoską.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift5 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 5</h3>  
+                    <p>
+                        Tata pyta Jasia:<br>
+                        - Dlaczego napisałeś w liście, aby Mikołaj przyniósł ci dwa komplety kolejki elektrycznej?<br>
+                        - Bo ja też chcę się bawić, kiedy jesteś w domu.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift6 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 6</h3>  
+                    <p>
+                        Wieczor wigilijny. Cała rodzina gotowa, stów zastawiony, czekają tylko na pierwszą gwiazdkę. Oczywiście przy stole jedno dodatkowe, puste miejsce.<br>
+                        Nagle pukanie do drzwi.<br>
+                        - Kto tam?<br>
+                        - Strudzony wędrowiec, czy jest dla mnie miejsce? <br>
+                        - Jest<br>
+                        - A mogę skorzystać? <br>
+                        - Nie <br>
+                        - Ale dlaczego?! <br>
+                        - Bo tradycyjnie musi być puste!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift7 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 7</h3>  
+                    <p>
+                        Przedszkolak pyta kolegę: <br>
+                        - Co dostałeś na gwiazdkę? <br>
+                        - Trąbkę <br>
+                        - Mówiłeś, że dostaniesz lepsze prezenty <br>
+                        - To super prezent! Dzięki niej zarabiam codziennie złotówkę! <Br>
+                        - W jaki sposób? <br>
+                        - Tata mi daje, żebym przestał trąbić!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift8 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 8</h3>  
+                    <p>
+                        Jasio pisze list do Świętego Mikołaja:<br>
+                        - "Chciałbym narty, łyżwy, sanki i grypę na zakończenie ferii świątecznych."
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift9 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 9</h3>  
+                    <p>
+                        Rozmawiają koledzy po pracy: <br>
+                        – Jak minęły święta? <br>
+                        – Wspaniale! Żona serwowała same zagraniczne dania.<br> 
+                        – Jakie? <br>
+                        – Barszcz ukraiński, fasolkę po bretońsku i pierogi ruskie. 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift10 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 10</h3>  
+                    <p>
+                        – Mamo, z mego listu do św. Mikołaja wykreśl kolejkę elektryczną, a wpisz łyżwy.<br>
+                        – A co, nie chcesz już pociągu?<br>
+                        – Chcę, ale jeden już znalazłem w Waszej szafie.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+
+            <div class="gift11 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 11</h3>  
+                    <p>
+                        – IKEA.<br>
+                        Choinka składana:<br>
+                        – Szkielet – 1 szt,<br>
+                        – Gałązki – 46 szt,<br>
+                        – Igły – 13543 szt,<br>
+                        – Klej montażowy – 3 litry.<br>
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift12 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 12</h3>  
+                    <p>
+                        - Kupiłeś już coś pod choinkę?<br>
+                        – Tak, stojak.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift13 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 13</h3>  
+                    <p>
+                        W wigilię chłop jedzie furmanką, a obok biegnie pies. Ponieważ koń biegnie leniwie, chłop bije go batem.<br>
+                        - Jeszcze raz mnie uderzysz, to będziesz szedł piechotą! - mówi koń.<br>
+                        - Pierwszy raz słyszę, żeby koń mówił! - dziwi się chłop.<br>
+                        - Ja też! - mówi pies. 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift14 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 14</h3>  
+                    <p>
+                        W wigilię Bożego Narodzenia Kowalscy słyszą u sąsiadów straszny hałas. Kowalska komentuje:<br>
+                        - Albo synek Nowaków dostał na gwiazdkę bębenek, albo Nowak zaczął śpiewać kolędy. 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift15 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 15</h3>  
+                    <p>
+                        Pod koniec stycznia Nowak pyta spotkanego na ulicy kolegę:<br>
+                        - Cóż to, Stefan, dopiero teraz choinkę niesiesz?<br>
+                        - A no tak, bo na święta nie miałem pieniędzy, a teraz dostałem ją za darmo! 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift16 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 16</h3>  
+                    <p>
+                        Biznesmen przed świętami Bożego Narodzenia mówi do żony:<br>
+                        - Kochanie, co mam ci kupić na gwiazdkę?<br>
+                        - Może być jakiś drobiazg. Najlepiej jakieś małe BMW do jazdy po mieście! 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift17 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 17</h3>  
+                    <p>
+                        Małgosia pyta mamę:<br>
+                        - Czy w tym roku św. Mikołaj przyniesie mi nową lalkę?<br>
+                        - Przecież lalka, którą masz jest prawie nowa!<br>
+                        - Co z tego? W zeszłym roku ja też byłam prawie nowa, ale pomimo to bocian przyniósł mi nową siostrzyczkę! 
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift18 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 18</h3>  
+                    <p>
+                        Do świętego Mikołaja rozdającego prezenty w domu towarowym podchodzi Jasio, zaczyna tarmosić go i woła:<br>
+                        - Tato! Mama mówiła, żebyś kupił mleko i masło jak będziesz wracał do domu!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift19 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 19</h3>  
+                    <p>
+                        Przed świętami Bożego Narodzenia tato przyniósł do domu choinkę i wstawił do specjalnego stojaka. Po chwili mama mówi do córki:<br>
+                        - A teraz Małgosiu, ubierzemy choinkę!<br>
+                        - A w co ją ubierzemy? W sweterek, sukienkę czy w garnitur?
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift20 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 20</h3>  
+                    <p>
+                        Nauczycielka pyta uczniów:<br>
+                        - Kto mi poda przykład zwierzęcia, które tak jak niedźwiedź zapada w sen zimowy?<br>
+                        Jasio:<br>
+                        - Święty Mikołaj, tylko on zapada w sen latem!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+
+            <div class="gift21 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 21</h3>  
+                    <p>
+                        Jaś pyta tatę:<br>
+                        – Tato, jaki ci kupić prezent pod choinkę?<br>
+                        – Nic mi nie kupuj, nie mam pieniędzy!
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift22 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 22</h3>  
+                    <p>
+                        - Mamusiu, czy tę rybkę będziemy jeść na Wigilię?<br>
+                        - Tak, syneczku.<br>
+                        - To po co ją myjesz? Przecież ona całe życie pływała w wodzie.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift23 gift">
+                <div class="inside">
+                    <h3>Dowcip na dzień 23</h3>  
+                    <p>
+                        Po świętach teściowa pyta:<br>
+                        – I jak tam zięciu, spodobały się wnuczkowi zabawki?<br>
+                        – Mama da spokój. Wszystkie prezenty rozwalił. Samochodziki, czołg, nawet choinkę i wszystkie bombki.<br>
+                        – I prezent ode mnie też?<br>
+                        – Nie, młotek od mamusi jest cały.
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="gift24 gift">
+                Gift 24
+                <<div class="inside">
+                    <h3>Boże Narodzenie!</h3>  
+                    <p>
+                        By Wam wszystko pasowało, <br>
+                        by kłopotów było mało, <br>
+                        byście zawsze byli zdrowi, <br>
+                        by problemy były z głowy, <br>
+                        by się wiodło znakomicie, <br>
+                        by wesołe było życie!<br><br>
+
+                        Wesołych Świąt
+                    </p>
+                </div>
+                <i id="close" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div class="bg-close"></div>
+    </div>
 
     <div class="js">
         <div class="js-left js-script">
@@ -100,10 +405,10 @@
         </div>
 
         <div class="js-right">
-            <p class="js-tekst">
+            <h2>
                 Animowana nawigacja
-            </p>
-            
+            </h2>
+            <p>Kliknij w X</p>
         </div>
     </div>
 

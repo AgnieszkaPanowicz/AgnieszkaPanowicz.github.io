@@ -22,6 +22,7 @@
             <a href="grafika.html">Grafika</a>
             <a href="#about">O mnie</a>
             <a href="#section3">Kontakt</a>
+            <a href="cv.html" target="_blank">CV</a>
             <div class="dot"></div>
         </nav>
     
@@ -33,6 +34,7 @@
                 <li><a href="grafika.html">Grafika</a></li>
                 <li><a href="#about">O mnie</a></li>
                 <li><a href="#section3">Kontakt</a></li>
+                <li><a href="cv.html" target="_blank">CV</a></li>
             </ul>
         </div>
     
@@ -52,20 +54,21 @@
                 <li><a href="grafika.html">Grafika</a></li>
                 <li><a href="#about">O mnie</a></li>
                 <li><a href="#section3">Kontakt</a></li>
+                <li><a href="cv.html" target="_blank">CV</a></li>
             </ul>
         </div>
     
         <div class="logo">
             <span>Portfolio</span>
             Agnieszka Panowicz
-            <img src="img/cloud-logo2.png" alt="clud">
+            <img src="img/cloud-logo2.png" alt="clud" width="92" height="48">
         </div>
     
         <div class="baner">
-            <img src="img/baner.png" alt="Portfolio" class="balon">        
+            <img src="img/baner.png" alt="Portfolio" class="balon" width="1254" height="436">        
         </div>
     
-        <button id="topButton" onclick="topFunction()">
+        <button id="topButton" onclick="topFunction()" aria-label="Przewiń na górę">
             <i class="fa-solid fa-angle-up"></i>
         </button>
     </header>
@@ -76,42 +79,42 @@
                 <h3>projekt graficzny</h3>
                 <h2>HTML + CSS</h2>
                 <span>CMS NA wordpressie</span>
-                <a href="strony.html"><button class="butt">Zobacz więcej</button></a>
+                <a href="strony.html"><button class="butt" aria-label="Zobacz projekty graficzne">Zobacz więcej</button></a>
             </div>
-            <img src="img/page1.jpg" alt="HTML + CSS">
+            <img src="img/page1.jpg" alt="HTML + CSS" width="564" height="402">
         </div>
         <div class="contents img-left">
             <div class="text">
                 <h3>strony responsywne</h3>
                 <h2>STYLE CSS</h2>
-                <a href="strony2.html"><button class="butt">Zobacz więcej</button></a>
+                <a href="strony2.html"><button class="butt" aria-label="Zobacz strony">Zobacz więcej</button></a>
             </div>
-            <img src="img/page2.jpg" alt="HTML + CSS">
+            <img src="img/page2.jpg" alt="HTML + CSS" width="564" height="402">
         </div>
         <div class="contents img-right">
             <div class="text">
                 <h2>JAVASCRIPT</h2>
-                <span>trochę kodu</span>
-                <a href="js.html"><button class="butt">Zobacz więcej</button></a>
+                <span>Wykonane przeze mnie skrypty w języku JavaScript.</span>
+                <a href="js.html"><button class="butt" aria-label="Zobacz kod JavaScript">Zobacz więcej</button></a>
             </div>
-            <img src="img/page6.jpg" alt="HTML + CSS">
+            <img src="img/page6.jpg" alt="HTML + CSS" width="564" height="402">
         </div>
         <div class="contents img-left">
             <div class="text">
                 <h3>strony, loga, wizytówki...</h3>
                 <h2>ADOBE + COREL</h2>
                 <span>projekty graficzne</span>
-                <a href="grafika.html"><button class="butt">Zobacz więcej</button></a>
+                <a href="grafika.html"><button class="butt" aria-label="Zobacz grafiki">Zobacz więcej</button></a>
             </div>
-            <img src="img/page4.jpg" alt="HTML + CSS">
+            <img src="img/page4.jpg" alt="HTML + CSS" width="564" height="402">
         </div>
         <div class="contents img-right">
             <div class="text">
                 <h2>malarstwo</h2>
                 <span>w wolnym czasie...</span>
-                <a href="malarstwo.html"><button class="butt">Zobacz więcej</button></a>
+                <a href="malarstwo.html"><button class="butt" aria-label="Zobacz obrazy">Zobacz więcej</button></a>
             </div>
-            <a href="malarstwo.html"><img src="img/page5.jpg" alt="HTML + CSS"></a>
+            <a href="malarstwo.html"><img src="img/page5.jpg" alt="HTML + CSS" width="564" height="402"></a>
         </div>
 
         <img src="img/clouds.png" class="top-clouds" alt="About">
@@ -125,9 +128,9 @@
                 Nazywam się Agnieszka Panowicz. Jestem z Gdańska.
                 <br><br>
                 Od lat rozwijam się w zakresie tworzenia stron internetowych oraz projektowania grafik.
-                Od ponad 3 lat pracuję dla firmy KingApp gdzie stawiam strony na systemie opracowanym przez tą firmę i styluję skupiając się by były to strony responsywne.
+                Od 3 lat pracuję dla firmy KingApp gdzie stawiam strony na systemie opracowanym przez tą firmę i styluję skupiając się by były to strony responsywne.
                 <br><br>
-                Wcześniej zajmowałam się projektowaniem i stawianiem stron głównie na systemie Wordpress. Tworzyłam również projekty na potrzeby druku m.in.: ulotki, wizytówki, banery czy logo.
+                Wcześniej zajmowałam się projektowaniem i stawianiem stron WWW głównie na systemie Wordpress. Tworzyłam grafiki do Internetu jak i na potrzeby druku. Korzystałam z takich programów jak Photoshop, Illustrator, Corel czy Figma. Projektowałam m.in.: szablony stron, loga, wizytówki, ulotki, banery, plakaty, identyfikacje wizyalne firmy.
                 <br><br>
                 Aktualnie uczę się języka JavaScript i Reacta w celu zmierzenia się na stanowisku Frontend Developera.
             </div>
@@ -152,7 +155,7 @@
                 <div class="error-email">Popraw adres e-mail</div>
                 <textarea name="message" placeholder="Wiadomość" id="message"></textarea> <br>
                 <div class="error-message">Pole tekstowe jest puste</div>
-                <button>Wyślij</button>
+                <button aria-label="Wyślij wiadomość">Wyślij</button>
             </form>
 
             <?php
@@ -180,10 +183,7 @@
                     http_response_code(500);
                   echo "Hmm, coś poszło nie tak. Wiadomość nie została wysłana.";
                 }
-            } else {
-                http_response_code(403);
-                echo "Wiadomość nie została wysłana...";
-            }
+            } 
             ?>
 
         </div>

@@ -21,11 +21,6 @@ button {
   cursor: pointer;
 }
 
-.page {
-  padding: 20px;
-  padding: 30px 0;
-}
-
 header {
   background-color: #e9fafc;
   width: 100%;
@@ -676,13 +671,33 @@ form .mess {
   border-radius: 3px;
 }
 
+.page-js {
+  max-width: 990px;
+  margin: auto;
+  padding: 20px;
+}
+.page-js h2 {
+  font-family: Oswald;
+  font-size: 40px;
+  line-height: 35px;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+.page-js p {
+  color: #fff;
+  text-align: center;
+}
+.page-js .form-left h2 {
+  text-align: left;
+  line-height: 45px;
+}
+
 .js {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20px auto 50px;
-  max-width: 990px;
+  margin: 0 auto 50px;
   width: 100%;
-  padding: 0 20px;
   gap: 70px;
   color: #fff;
 }
@@ -722,6 +737,11 @@ form .mess {
   border: 1px solid #ffffff40;
   padding: 40px;
 }
+@media screen and (max-width: 500px) {
+  .js .js-script {
+    padding: 15px;
+  }
+}
 .js .success {
   display: none;
 }
@@ -740,7 +760,7 @@ form .mess {
   transition: width 0.6s linear;
 }
 .js nav.active {
-  width: 350px;
+  width: 100%;
 }
 .js nav ul {
   display: flex;
@@ -767,6 +787,11 @@ form .mess {
   color: #000;
   text-decoration: none;
   margin: 0 10px;
+}
+@media screen and (max-width: 350px) {
+  .js nav ul a {
+    margin: 0 5px;
+  }
 }
 .js .icon {
   background-color: #fff;
@@ -830,18 +855,134 @@ form .mess {
   max-width: 990px;
   width: 100%;
   text-align: center;
-  margin: 20px auto 50px;
-  padding: 0 20px 0 10px;
-}
-.js-poke h2 {
-  font-family: Oswald;
-  font-size: 40px;
-  line-height: 48px;
-  color: #fff;
-  font-weight: normal;
+  margin: 80px auto 50px;
 }
 
 .wars {
   display: block;
   margin: auto;
+  max-width: 100%;
+}
+
+.js-cal {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 50px;
+  padding: 20px;
+  border: 1px solid #ffffff40;
+}
+.js-cal #boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+.js-cal .box {
+  text-align: center;
+  border-radius: 20px;
+  height: 160px;
+  overflow: hidden;
+  box-shadow: 11px 14px 9px -12px #42445a;
+  cursor: pointer;
+}
+.js-cal .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: -1px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.js-cal .box img:hover {
+  transform: scale(1.2);
+}
+.js-cal .inactive-box {
+  background: gray;
+  cursor: default;
+}
+.js-cal .inactive-box img {
+  opacity: 0.3;
+  box-shadow: 9px 11px 7px -12px #42445a;
+}
+.js-cal .inactive-box img:hover {
+  transform: unset;
+}
+.js-cal #gifts {
+  z-index: 9;
+  position: relative;
+}
+.js-cal .gift {
+  position: fixed;
+  background-size: cover;
+  font-size: 0;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 0;
+  max-width: 0;
+  max-height: 0;
+  text-align: center;
+  box-shadow: 11px 14px 9px -12px #42445a;
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.js-cal .gift::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff81;
+  z-index: 0;
+}
+.js-cal .gift p {
+  text-align: left;
+  color: #000;
+}
+.js-cal .inside {
+  position: relative;
+  z-index: 9;
+}
+.js-cal .active {
+  opacity: 1;
+  width: 80vw;
+  max-width: 600px;
+  height: auto;
+  max-height: 600px;
+  font-size: 21px;
+}
+.js-cal .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  color: #ec0023;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: all 0.3s ease;
+  z-index: 9;
+}
+.js-cal .close:hover {
+  transform: rotate(90deg);
+}
+.js-cal .bg-close {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: #0000003f;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+.js-cal .bg-close.visible {
+  display: block;
+  opacity: 1;
 }
